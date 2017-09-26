@@ -15,7 +15,7 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 
-[image1]: ./examples/grayscale.jpg "Grayscale"
+[image1]: ./test_images_output/solidWhiteCurve.png
 
 ---
 
@@ -29,7 +29,7 @@ First, I converted the images to grayscale, then I applied Gaussian blur with a 
 
 In order to draw a single line on the left and right lanes, I created a new method called draw_lines_avg() in order to calculate the average of the given hough lines. In details: I devided the picture into left and right halves, based on the line starts (x1) I grouped the lines, then I calculated the weighted slope and weighted offset for the line leftand right equations. For smoothing line transitions in videos I created a class named LaneFinder(Base) that stores the last valid line equation.
 
-If you'd like to include images to show how the pipeline works, here is how to include an image: 
+Image showing both all Hough lines (red) and average (green): 
 
 ![alt text][image1]
 
